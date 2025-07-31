@@ -1,0 +1,116 @@
+header {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: end;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
+header>nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 15px 20px;
+}
+nav > .logo > h2{
+    cursor: pointer;
+}
+
+nav>.right-section {
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+}
+
+.right-section>ul {
+    display: flex;
+    gap: 23px;
+    list-style: none;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+ul>li>a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    height: 2px;
+    width: 0px;
+    background-color: #cf1b1b;
+    transition: all 1s ease 0s;
+}
+
+ul>li>a:hover:after {
+    width: 100%;
+}
+
+.right-section>#moon {
+    background-color: #fff;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.right-section>#moon>i {
+    color: black;
+    font-size: 22px;
+}
+
+.right-section>#hambrger {
+    display: none;
+}
+
+.right-section>#hambrger>i {
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 800;
+    transition: all 1s ease 0s;
+}
+
+.right-section>#hambrger>i:hover {
+    transform: rotate(10deg);
+}
+
+@media (max-width:768px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header>nav {
+        width: 100%;
+    }
+    .right-section>ul {
+        position: absolute;
+        right: 0px;
+        top: 67px;
+        background-color: #14191b;
+        flex-direction: column;
+        width: 70%;
+        height: calc(100vh - 67px);
+        display: none;
+        padding: 20px;
+        z-index: -1;
+    }
+    .right-section >  .ul-active{
+        display: flex;
+    }
+
+    .right-section>#hambrger {
+        display: block;
+    }
+}
