@@ -15,7 +15,7 @@
     "react-scroll": "^1.9.3",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://muhammadirfan854.github.io/M.Irfan-Portfolio",
+ "homepage": "https://muhammadirfan854.github.io/M.Irfan-Portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
