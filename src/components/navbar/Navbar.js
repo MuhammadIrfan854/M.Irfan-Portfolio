@@ -28,7 +28,7 @@ const Navbar = () => {
             <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
             <li><Link to="about" smooth={true} duration={600}>About</Link></li>
             <li><Link to="skills" smooth={true} duration={600}>Skills</Link></li>
-            <li><Link to="about" smooth={true} duration={600}>Projects</Link></li>
+            <li><Link to="project" smooth={true} duration={600}>Projects</Link></li>
             <li><Link to="about" smooth={true} duration={600}>Contact</Link></li>
           </ul>
           <div id="moon" onClick={toggleTheme}>
